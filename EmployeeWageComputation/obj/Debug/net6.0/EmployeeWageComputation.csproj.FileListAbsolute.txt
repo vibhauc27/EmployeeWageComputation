@@ -12,3 +12,4 @@ C:\Users\vindy\source\repos\EmployeeWageComputation\EmployeeWageComputation\obj\
 C:\Users\vindy\source\repos\EmployeeWageComputation\EmployeeWageComputation\obj\Debug\net6.0\ref\EmployeeWageComputation.dll
 C:\Users\vindy\source\repos\EmployeeWageComputation\EmployeeWageComputation\obj\Debug\net6.0\EmployeeWageComputation.pdb
 C:\Users\vindy\source\repos\EmployeeWageComputation\EmployeeWageComputation\obj\Debug\net6.0\EmployeeWageComputation.genruntimeconfig.cache
+C:\Users\vindy\source\repos\EmployeeWageComputation\EmployeeWageComputation\obj\Debug\net6.0\EmployeeWageComputation.csproj.AssemblyReference.cache
