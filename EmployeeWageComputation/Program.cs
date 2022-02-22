@@ -10,7 +10,7 @@ namespace EmployeeWageComputation
         static void Main(string[] args)
         {
             WageComputation wagecomputation = new WageComputation();
-            wagecomputation.EmpAttendace();            
+            wagecomputation.CalculateEmpWage();            
         }
     }
 }
