@@ -7,20 +7,30 @@ namespace EmployeeWageComputation
 {
     class WageComputation
     {
-        const int EMP_PRESENT = 0, EMP_ABSENT = 1, WAGE_PER_HR = 20, FULL_DAY_HR = 8;
+        const int WAGE_PER_HR = 20, FULL_DAY_HR = 8, FULL_TIME = 0, PART_TIME = 1, EMP_ABSENT = 2, PART_TIME_HR = 4;
+        int empHrs = 0, totalEmpWage = 0;
         public void CalculateEmpWage()
         {
             Random random = new Random();
-            int empCheck = random.Next(0, 2);
-            if (empCheck == EMP_PRESENT)
+            int empCheck = random.Next(0, 3);
+            if (empCheck == FULL_TIME)
             {
-                Console.WriteLine("Employee is present");
-                int dailyEmpWage = WAGE_PER_HR * FULL_DAY_HR;
-                Console.WriteLine(dailyEmpWage);
+                empHrs = FULL_DAY_HR;
+                this.totalEmpWage = empHrs * WAGE_PER_HR;
+                Console.WriteLine("Total FullTime Employee wage : " + this.totalEmpWage);
+            }
+            if (empCheck == PART_TIME)
+            {
+                empHrs = PART_TIME_HR;
+                this.totalEmpWage = empHrs * WAGE_PER_HR;
+                Console.WriteLine("Total PartTime Employee wage : " + this.totalEmpWage);
             }
             if (empCheck == EMP_ABSENT)
             {
+                empHrs = 0;
                 Console.WriteLine("Employee is absent");
+                this.totalEmpWage = empHrs * WAGE_PER_HR;
+                Console.WriteLine("Total Employee wage : " + this.totalEmpWage);
             }
         }
     }
